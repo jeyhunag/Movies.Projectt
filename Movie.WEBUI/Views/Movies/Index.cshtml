@@ -1,0 +1,183 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section addcss{
+
+
+    <!-- Include rateYo CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css" />
+    <link href="~/css/movies.css" rel="stylesheet" asp-append-version="true" />
+}
+    <style>
+        main{
+            margin-bottom:0px;
+        }
+        .card-container {
+            margin-bottom: 100px !important;
+        }
+
+        Form .input-group {
+            margin-right: 10px;
+        }
+
+        .pro-edt-select {
+            background-color: red;
+            color: white;
+            border-radius: 0;
+            border-color: red;
+        }
+
+            .pro-edt-select:focus {
+                background-color: red;
+                color: white;
+                outline: none; /* To remove the default browser focus outline */
+            }
+
+            .pro-edt-select option {
+                background-color: red;
+                color: white;
+            }
+
+                .pro-edt-select option:hover {
+                    background-color: white;
+                    color: black;
+                }
+
+
+        .submit{
+            background-color: #202020;
+            color: white;
+            padding: 10px;
+            border-radius:2px;
+            border-color:red;
+        }
+        .moviePageDropdown {
+            display: inline-flex;
+        }
+
+        .dropdown-menu {
+            margin-top: 10px;
+        }
+
+        .card .details {
+            bottom: -45px;
+        }
+
+            .card .details h2 {
+                color: white;
+                max-width: 250px;
+                font-size: 23px;
+            }
+
+        .pagination {
+            margin-top:40px; 
+            margin-bottom:-20px;
+        }
+
+        .Filtir{
+            margin-left:20px;
+        }
+
+    </style>
+}
+<div class="container">
+    <div class="Filtir">
+        <form asp-action="index" method="get" class="dropdown moviePageDropdown">
+            <div class="input-group mg-b-pro-edt">
+                <span class="input-group-addon"><i class="icon nalika-edit" aria-hidden="true"></i></span>
+                <select class="form-control pro-edt-select" asp-for="FilterFormModel.GenresCategoryId">
+                    <option value="Genres" selected disabled>Genres</option>
+                    @foreach (var item in Model.GenresCategories)
+                    {
+                        
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="input-group mg-b-pro-edt">
+                <span class="input-group-addon"><i class="icon nalika-edit" aria-hidden="true"></i></span>
+                <select class="form-control pro-edt-select" asp-for="FilterFormModel.CountryCategoryId">
+                    <option value="Country" selected disabled>Country</option>
+                    @foreach (var item in Model.CountryCategories)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="input-group mg-b-pro-edt">
+                <span class="input-group-addon"><i class="icon nalika-edit" aria-hidden="true"></i></span>
+                <select class="form-control pro-edt-select" asp-for="FilterFormModel.LanguageCategoryId">
+                    <option value="Language" selected disabled>Language</option>
+                    @foreach (var item in Model.LanguageCategories)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </select>
+            </div>
+            <input class="submit" type="submit" value="Search" />
+               
+        </form>
+    </div>
+
+    <div class="card-container" style="justify-content: flex-start">
+        @foreach (var item in Model.PagedViewModel.Items)
+        {
+            <div class="card mt-3 mb-5" style="margin:1.6%;">
+                <div class="poster">
+                    <img src="~/@item.Img" alt="#">
+                </div>
+                <div class="details" sty>
+                    <a asp-area="" asp-controller="PlayMovies" asp-action="Index" asp-route-id="@item.Id"><i class="bi bi-play-circle"></i></a>
+                    <h2>@item.Name</h2>
+                    <div id="rateYo_@item.Id" style="width: 110px; margin-bottom:15px;"> </div>
+                    <div class="tags">
+                        <span>@item.Year</span>
+                        <span>@item.GenresCategory.Name</span>
+                    </div>
+                    <div class="info">
+                        Director: @item.Director
+                    </div>
+                </div>
+            </div>
+        }
+        @Model.PagedViewModel.GetPagenation(Url, "Index");
+    </div>
+</div>
+
+@section Scripts{
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include rateYo JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script>
+
+
+        /* Javascript Star*/
+        $(function () {
+            // Iterate over all divs with id attribute that starts with "rateYo_"
+            $('div[id^="rateYo_"]').each(function () {
+                // Extract the Id of the MovieC item from the div's id attribute
+                var movieId = this.id.replace('rateYo_', '');
+                // Initialize rateYo plugin for this div with the extracted movieId
+                $(this).rateYo({
+                    rating: 5,
+                    spacing: "5px",
+                    starWidth: "20px",
+                    multiColor: {
+                        "startColor": "#FF0000", //RED
+                        "endColor": "#00FF00"  //GREEN
+                    }
+                });
+            });
+        });
+        $(function () {
+            $("#rateYo").rateYo()
+                .on("rateyo.set", function (e, data) {
+                    alert("The rating is set to " + data.rating + "!");
+                });
+        });
+    </script>
+}
