@@ -2,17 +2,18 @@
 
 .Filtir {
     margin-top: 8rem;
+    margin-left: 20px;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .card {
     display: inline-block;
-    /* width: calc(25% - 10px);*/
     margin-right: 4px;
 }
 
@@ -68,6 +69,7 @@
     width: 100%;
     z-index: 2;
     transition: 0.5s;
+    bottom: -45px;
 }
 
 .card:hover .details {
@@ -75,8 +77,10 @@
 }
 
 .card .details h2 {
-    
     font-weight: bolder;
+    color: white;
+    max-width: 250px;
+    font-size: 23px;
 }
 
 .card .details h3 {
@@ -123,14 +127,60 @@
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: calc(50% - 10px);
-    }
-}
 
-@media (max-width: 576px) {
-    .card {
-        width: 100%;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+        Form .input-group {
+            margin-right: 10px;
+        }
+
+        .pro-edt-select {
+            background-color: red;
+            color: white;
+            border-radius: 0;
+            border-color: red;
+        }
+
+            .pro-edt-select:focus {
+                background-color: red;
+                color: white;
+                outline: none;
+            }
+
+            .pro-edt-select option {
+                background-color: red;
+                color: white;
+            }
+
+                .pro-edt-select option:hover {
+                    background-color: white;
+                    color: black;
+                }
+
+
+        .submit{
+            background-color: #202020;
+            color: white;
+            padding: 10px;
+            border-radius:2px;
+            border-color:red;
+        }
+        .moviePageDropdown {
+            display: inline-flex;
+        }
+
+
+
+        .pagination {
+            margin-top:40px; 
+            margin-bottom:-20px;
+        }

@@ -9,79 +9,9 @@
     <!-- Include rateYo CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css" />
     <link href="~/css/movies.css" rel="stylesheet" asp-append-version="true" />
+
 }
-    <style>
-        main{
-            margin-bottom:0px;
-        }
-        .card-container {
-            margin-bottom: 100px !important;
-        }
 
-        Form .input-group {
-            margin-right: 10px;
-        }
-
-        .pro-edt-select {
-            background-color: red;
-            color: white;
-            border-radius: 0;
-            border-color: red;
-        }
-
-            .pro-edt-select:focus {
-                background-color: red;
-                color: white;
-                outline: none; /* To remove the default browser focus outline */
-            }
-
-            .pro-edt-select option {
-                background-color: red;
-                color: white;
-            }
-
-                .pro-edt-select option:hover {
-                    background-color: white;
-                    color: black;
-                }
-
-
-        .submit{
-            background-color: #202020;
-            color: white;
-            padding: 10px;
-            border-radius:2px;
-            border-color:red;
-        }
-        .moviePageDropdown {
-            display: inline-flex;
-        }
-
-        .dropdown-menu {
-            margin-top: 10px;
-        }
-
-        .card .details {
-            bottom: -45px;
-        }
-
-            .card .details h2 {
-                color: white;
-                max-width: 250px;
-                font-size: 23px;
-            }
-
-        .pagination {
-            margin-top:40px; 
-            margin-bottom:-20px;
-        }
-
-        .Filtir{
-            margin-left:20px;
-        }
-
-    </style>
-}
 <div class="container">
     <div class="Filtir">
         <form asp-action="index" method="get" class="dropdown moviePageDropdown">
@@ -121,7 +51,7 @@
         </form>
     </div>
 
-    <div class="card-container" style="justify-content: flex-start">
+    <div class="card-container">
         @foreach (var item in Model.PagedViewModel.Items)
         {
             <div class="card mt-3 mb-5" style="margin:1.6%;">

@@ -120,7 +120,27 @@
 
     /* Contact hisse sonu */
 
+    .Filtir {
+        margin-left: -31px!important;
+    }
 
+
+    .card-container {
+        transform: translate(87px, 0);
+    }
+    .moviePageDropdown {
+        transform: translate(55px, 0) !important;
+    }
+
+    .pagination {
+        margin-top: 0!important;
+        transform: translate(-61px, 56px);
+    }
+
+        .pagination > li > a {
+            font-size: 22px;
+            padding: 3px;
+        }
 }
 
 @media (max-width: 375px) and (min-width: 319px) {
@@ -241,7 +261,28 @@
 
     /* Contact hisse sonu */
 
+    .Filtir {
+        margin-left: -81px!important;
+    }
 
+
+    .card-container {
+        transform: translate(87px, 0);
+    }
+
+    .moviePageDropdown {
+        transform: translate(96px, 0) !important;
+    }
+
+    .pagination {
+        margin-top: 0!important;
+        transform: translate(-26px, 56px);
+    }
+
+        .pagination > li > a {
+            font-size: 22px;
+            padding:3px;
+        }
 }
 
 @media (max-width: 320px) {
@@ -362,6 +403,28 @@
 
     /* Contact hisse sonu */
 
+    .Filtir {
+        margin-left: -81px !important;
+    }
+
+
+    .card-container {
+        transform: translate(64px, 0);
+    }
+
+    .moviePageDropdown {
+        transform: translate(96px, 0) !important;
+    }
+
+    .pagination {
+        margin-top: 0 !important;
+        transform: translate(0, 56px);
+    }
+
+        .pagination > li > a {
+            font-size: 22px;
+            padding: 3px;
+        }
 
 }
 /* Tablet üçün */
@@ -469,6 +532,9 @@
 
     /* Contact hisse sonu */
 
+    .Filtir {
+        margin-left: 13px;
+    }
 
 }
 
@@ -512,10 +578,21 @@
 
     /* Contact hisse sonu */
 
+    .card-container {
+        margin-bottom: 0;
+    }
 
+    .Filtir {
+        transform: translate(-30px, 0);
+    }
+
+    .pagination {
+         margin-top: 0; 
+        margin-bottom: 0;
+    }
 }
 
-/* Böyük Ekranlar üçün (> 1200px) */
+/* Böyük Ekranlar üçün */
 @media (min-width: 1442px) and (max-width: 2560px) {
     .logoicons img {
         width: 135px;
