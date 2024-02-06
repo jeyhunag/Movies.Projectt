@@ -6,20 +6,8 @@
     ViewData["Title"] = "Create";
 }
 
-@section addcss{
 
-    <link href="~/css/contactus.css" rel="stylesheet" asp-append-version="true" />
-
-    <style>
-        .form-contact {
-            width: 500px !important;
-            margin: 170px auto !important;
-        }
-    </style>
-}
-
-
-<div class="container">
+<div>
     <form class="form-contact" method="post" asp-action="Create">
         <div class="header mb-4">
             <h1>Contact Us</h1>
@@ -34,7 +22,7 @@
         </div>
         <div class="mb-3 mt-3">
             <label asp-for="Message" for="Message" class="mb-3" style="color:white;">Message</label>
-            <textarea asp-for="Message" class="form-control form-control-contact" rows="5" id="message" name="Message" placeholder="Your Message"></textarea>
+            <textarea asp-for="Message" class="form-control form-control-contact" rows="5" id="Message" name="Message" placeholder="Your Message"></textarea>
         </div>
         @if (!string.IsNullOrWhiteSpace(ViewBag.msg))
         {
