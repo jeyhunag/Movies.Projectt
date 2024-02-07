@@ -1,28 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-::-webkit-scrollbar {
-    width: 20px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #202020;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #F0D463;
-    border-radius: 10px;
-}
-
-body {
-    background-color: #202020;
-}
 
 video {
     margin-top: 4rem;
@@ -53,6 +29,7 @@ video {
     color: white;
     margin-left: 4rem;
 }
+
 
 .SpanMovies span {
     font-size: 14px;
@@ -224,107 +201,45 @@ h4 {
 
 
 
-/* @media only screen and (max-width: 992px) {
-    .PMovies {
-        flex-direction: column;
-    }
-
-    .MoviesFoto {
-        margin-top: 1rem;
-    }
-
-    .MoviesFoto img {
-        width: 100%;
-    }
-
-    .text {
-        margin-left: 1rem;
-    }
-
-    .SpanMovies span {
-        font-size: 12px;
-    }
-
-    .SpanMovies span i {
-        font-size: 18px;
-    }
-
-    .BMovies button {
-        margin-right: 1rem;
-    }
-
-    .featured,
-    .movies,
-    .shows {
-        flex-direction: column;
-    }
-
-    .featured>img, .image > .img-div {
-        width: 100%;
-        height: auto;
-    }
-
-    #image {
-        width: 100%;
-        height: auto;
-    }
+/* modal Share */
+.modalPlayMovies {
+    top: 150px;
 }
 
-@media only screen and (max-width: 768px) {
-    video {
-        height: 500px;
-    }
-
-    .MoviesFoto img {
-        width: 200px;
-        height: 300px;
-    }
-
-    .featured>img, .image > .img-div {
-        width: 200px;
-        height: 250px;
-    }
-
-    #image {
-        width: 200px;
-        height: 250px;
-    }
-
-    .featured_li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .RelatedMovies {
-        margin-top: 5rem;
-    }
+.modal-title-playmovies {
+    color: #202020;
 }
 
-@media only screen and (max-width: 576px) {
-    video {
-        height: 400px;
+.btn-play-close {
+    color: white !important;
+    font-weight: bolder !important;
+}
+
+    .btn-play-close:hover {
+        color: white !important;
     }
 
-    .MoviesFoto img {
-        width: 150px;
-        height: 200px;
+.modal-body-icon a i {
+    font-size: 40px !important;
+    color: white;
+}
+
+
+/* Modal Trailer */
+
+.modal-content-playMovies {
+    border-radius: 5px;
+    top: 100px !important;
+    width: 600px;
+    background: #202020;
+}
+
+.modal-body-playmovies {
+    margin-top: -40px;
+}
+
+    .modal-body-playmovies > video {
+        width: 100% !important;
+        height: 100% !important;
     }
 
-    .featured>img, .image > .img-div {
-        width: 150px;
-        height: 200px;
-    }
-
-    #image {
-        width: 150px;
-        height: 200px;
-    }
-
-    .featured_li {
-        font-size: 20px;
-    }
-
-    .MoviesP p {
-        width: 100%;
-    }
-} */

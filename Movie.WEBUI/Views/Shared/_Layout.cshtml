@@ -126,6 +126,7 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 
+
     <script>
         //Loader pageden page kecid etmek
         window.addEventListener("load", () => {
@@ -185,6 +186,7 @@
         }
     </script>
     <script src="~/js/Index.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

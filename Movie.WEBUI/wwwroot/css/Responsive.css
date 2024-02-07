@@ -141,6 +141,74 @@
             font-size: 22px;
             padding: 3px;
         }
+
+    /* Play Movies hisse sonu */
+
+    video {
+        margin-top: 4rem !important;
+        width: 221% !important;
+        height: auto !important;
+    }
+
+
+    .PMovies {
+        transform: translate(-34px,0);
+    }
+
+    .MoviesP> p{
+        width:878px!important;
+    }
+    .BMovies button {
+        transform: scale(1.3) !important;
+        margin: 0 25px 0 30px !important
+    }
+
+    .RelatedMovies {
+        width: 221% !important;
+        margin-top: 4rem !important;
+        margin-left: 14px;
+    }
+
+    .images,
+    .images .featured,
+    .images .movies,
+    .images .shows {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .featured > img,
+    .image > .img-div {
+        width: 220px;
+        height: 280px;
+    }
+
+    #image {
+        width: 166px !important;
+        height: 279px !important;
+    }
+
+    .img-div > h4 {
+        font-size: 15px !important;
+        transform: translate(0px, -11px);
+    }
+
+    .img-div > p {
+        font-size: 14px !important;
+        transform: translate(0px, -17px);
+    }
+
+    .icon-container {
+        transform: scale(1) !important;
+        right: 6px !important;
+        width: 40px;
+        height: 130px;
+        top: -130px;
+        right: 0;
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 375px) and (min-width: 319px) {
@@ -283,6 +351,75 @@
             font-size: 22px;
             padding:3px;
         }
+
+    /* Play Movies hisse sonu */
+
+    video {
+        margin-top: 4rem !important;
+        width: 242% !important;
+        height: auto !important;
+    }
+
+
+    .PMovies {
+        transform: translate(-53px,0);
+    }
+
+    .MoviesP > p {
+        width: 878px !important;
+    }
+
+    .BMovies button {
+        transform: scale(1.3) !important;
+        margin: 0 25px 0 30px !important
+    }
+
+    .RelatedMovies {
+        width: 247% !important;
+        margin-top: 4rem !important;
+        margin-left: 14px;
+    }
+
+    .images,
+    .images .featured,
+    .images .movies,
+    .images .shows {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .featured > img,
+    .image > .img-div {
+        width: 220px;
+        height: 280px;
+    }
+
+    #image {
+        width: 166px !important;
+        height: 279px !important;
+    }
+
+    .img-div > h4 {
+        font-size: 15px !important;
+        transform: translate(0px, -11px);
+    }
+
+    .img-div > p {
+        font-size: 14px !important;
+        transform: translate(0px, -17px);
+    }
+
+    .icon-container {
+        transform: scale(1) !important;
+        right: -6px !important;
+        width: 40px;
+        height: 130px;
+        top: -130px;
+        right: 0;
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -426,6 +563,74 @@
             padding: 3px;
         }
 
+    /* Play Movies hisse sonu */
+
+    video {
+        margin-top: 4rem !important;
+        width: 280% !important;
+        height: auto !important;
+    }
+
+
+    .PMovies {
+        transform: translate(-60px,0);
+    }
+
+    .MoviesP > p {
+        width: 878px !important;
+    }
+
+    .BMovies button {
+        transform: scale(1.3) !important;
+        margin: 0 25px 0 30px !important
+    }
+
+    .RelatedMovies {
+        width: 290% !important;
+        margin-top: 4rem !important;
+        margin-left: 14px;
+    }
+
+    .images,
+    .images .featured,
+    .images .movies,
+    .images .shows {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .featured > img,
+    .image > .img-div {
+        width: 220px;
+        height: 280px;
+    }
+
+    #image {
+        width: 166px !important;
+        height: 279px !important;
+    }
+
+    .img-div > h4 {
+        font-size: 15px !important;
+        transform: translate(0px, -11px);
+    }
+
+    .img-div > p {
+        font-size: 14px !important;
+        transform: translate(0px, -17px);
+    }
+
+    .icon-container {
+        transform: scale(1) !important;
+        right: -6px !important;
+        width: 51px;
+        height: 145px;
+        top: -130px;
+        right: 0;
+        font-size: 25px;
+    }
 }
 /* Tablet üçün */
 @media (max-width: 768px) and (min-width: 426px) {
@@ -536,6 +741,68 @@
         margin-left: 13px;
     }
 
+    /* Play Movies hisse sonu */
+
+    video {
+        margin-top: 2rem !important;
+        width: 132% !important;
+        height: auto !important;
+    }
+
+
+    .PMovies{
+        transform:translate(-34px,0);
+    }
+
+    .BMovies button {
+        transform: scale(1.3) !important;
+        margin: 0 25px 0 30px !important
+    }
+
+    .RelatedMovies {
+        width:139%!important;
+        margin-top: 4rem!important;
+    }
+    .images,
+    .images .featured,
+    .images .movies,
+    .images .shows {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .featured > img,
+    .image > .img-div {
+        width: 220px;
+        height: 280px;
+    }
+
+    #image {
+        width: 166px !important;
+        height: 279px !important;
+    }
+
+    .img-div > h4 {
+        font-size: 15px !important;
+        transform: translate(0px, -11px);
+    }
+
+    .img-div > p {
+        font-size: 14px !important;
+        transform: translate(0px, -17px);
+    }
+
+    .icon-container {
+        transform: scale(1) !important;
+        right: 6px !important;
+        width: 40px;
+        height: 130px;
+        top: -130px;
+        right: 0;
+        font-size: 25px;
+    }
 }
 
 /* Orta ölçülü ekranlar üçün (769px - 1024px) */
@@ -589,6 +856,55 @@
     .pagination {
          margin-top: 0; 
         margin-bottom: 0;
+    }
+
+    /* Play Movies hisse sonu */
+
+    video {
+        height: 465px!important;
+    }
+
+    .PMovies {
+        transform: translate(-37px,0);
+    }
+    .BMovies {
+        width: 100%;
+    }
+
+        .BMovies button {
+            transform: scale(1.3) !important;
+            margin: 0 25px 0 30px !important
+        }
+
+    .images,
+    .images .featured,
+    .images .movies,
+    .images .shows {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .featured > img,
+    .image > .img-div {
+        width: 220px;
+        height: 280px;
+    }
+
+    #image {
+        width: 166px!important;
+        height: 279px!important;
+    }
+
+    .img-div > h4 {
+        font-size: 15px !important;
+        transform: translate(0px, -11px);
+    }
+
+    .img-div > p {
+        font-size: 14px !important;
+        transform: translate(0px, -17px);
     }
 }
 
@@ -657,4 +973,28 @@
     }
 
     /* Contact hisse sonu */
+
+
+
+    /* Play Movies hisse sonu */
+
+    video {
+        margin-top: 6rem!important;
+        height: auto!important;
+    }
+
+    .PMovies {
+        transform: translate(-37px,0);
+    }
+
+
+    .BMovies {
+        width: 100%;
+    }
+
+        .BMovies button {
+            transform: scale(1.3) !important;
+            margin: 0 25px 0 30px !important
+        }
+
 }
