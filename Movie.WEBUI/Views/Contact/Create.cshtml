@@ -24,6 +24,7 @@
             <label asp-for="Message" for="Message" class="mb-3" style="color:white;">Message</label>
             <textarea asp-for="Message" class="form-control form-control-contact" rows="5" id="Message" name="Message" placeholder="Your Message"></textarea>
         </div>
+
         @if (!string.IsNullOrWhiteSpace(ViewBag.msg))
         {
             <input type="submit" value="@ViewBag.msg" class="submit btn button-contact">

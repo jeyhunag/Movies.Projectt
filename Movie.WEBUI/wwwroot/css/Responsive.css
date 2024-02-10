@@ -1,6 +1,8 @@
 ﻿
 
 /* Mobil telefonlar üçün */
+
+
 @media (max-width: 425px) and (min-width: 376px) {
 
     main {
@@ -10,7 +12,7 @@
     .Accaunt {
         display: block;
         cursor: pointer;
-        transform: translate(53px, 0px);
+        transform: translate(11px, 0px);
     }
 
         .Accaunt .line {
@@ -65,14 +67,12 @@
     }
 
     .search-box {
-        width: 145px;
-        transform: translate(4px, 0);
+        width: 206px;
+        transform: translate(-18px, 0);
     }
 
     .logoicons img {
-        width: 120px;
-        height: 30px;
-        transform: translate(-86px, 0);
+        display:none;
     }
 
     .nav-bar ul li a {
@@ -92,9 +92,9 @@
     }
 
         .logoIcon img {
-            width: 188px;
-            transform: translate(176px, 0);
-            height: 45px;
+            width: 146px;
+            transform: translate(89px, 5px);
+            height: 40px;
         }
 
     .Icon {
@@ -102,7 +102,7 @@
     }
 
         .Icon li {
-            font-size: 27px;
+            font-size: 21px;
             margin-top: 13px;
             margin-right: 1rem;
         }
@@ -110,31 +110,40 @@
     /* Header ve Footer hisse sonu */
 
     .form-contact .header h1 {
-        font-size: 40px;
+        font-size: 31px;
     }
 
     .form-contact {
-        width: 100%;
-        margin: 184px 36px;
+        width: 91%;
+        height: auto;
+        margin: 98px auto;
     }
+
 
     /* Contact hisse sonu */
 
+
     .Filtir {
-        margin-left: -31px!important;
+        transform: translate(-104px, -7px);
     }
 
+    .input-group > .form-control, .input-group > .form-floating, .input-group > .form-select {
+        padding: 2px;
+        font-size: 15px;
+    }
 
     .card-container {
-        transform: translate(87px, 0);
+        justify-content: center !important;
+        margin-bottom: 0;
     }
+
     .moviePageDropdown {
-        transform: translate(55px, 0) !important;
+        transform: translate(96px, 0) !important;
     }
 
     .pagination {
-        margin-top: 0!important;
-        transform: translate(-61px, 56px);
+        margin-top: 0 !important;
+        transform: translate(0, 56px);
     }
 
         .pagination > li > a {
@@ -142,7 +151,7 @@
             padding: 3px;
         }
 
-    /* Play Movies hisse sonu */
+    /*  Movies hisse sonu */
 
     video {
         margin-top: 4rem !important;
@@ -219,7 +228,7 @@
     .Accaunt {
         display: block;
         cursor: pointer;
-        transform: translate(47px, 0px);
+        transform: translate(-12px, 0px);
     }
 
         .Accaunt .line {
@@ -274,14 +283,12 @@
     }
 
     .search-box {
-        width: 145px;
-        transform: translate(4px, 0);
+        width: 206px;
+        transform: translate(-28px, 0);
     }
 
     .logoicons img {
-        width: 120px;
-        height: 30px;
-        transform: translate(-86px, 0);
+        display: none;
     }
 
     .nav-bar ul li a {
@@ -297,13 +304,13 @@
     }
 
     .logoIcon {
-        width: 21%;
+        width: 30%;
     }
 
         .logoIcon img {
-            width: 188px;
-            transform: translate(221px, 0);
-            height: 45px;
+            width: 146px;
+            transform: translate(80px, 5px);
+            height: 31px;
         }
 
     .Icon {
@@ -311,7 +318,7 @@
     }
 
         .Icon li {
-            font-size: 27px;
+            font-size: 16px;
             margin-top: 13px;
             margin-right: 1rem;
         }
@@ -319,23 +326,40 @@
     /* Header ve Footer hisse sonu */
 
     .form-contact .header h1 {
-        font-size: 40px;
+        font-size: 31px;
     }
 
     .form-contact {
-        width: 100%;
-        margin: 184px 55px;
+        width:91%;
+        height:auto;
+        margin: 98px auto;
     }
 
+     .button-contact {
+        padding: 8px 40px;
+        background-color: red;
+        border-radius: 0;
+        color: white;
+    }
+
+        .button-contact:hover {
+            background-color: red;
+            color: white;
+        }
     /* Contact hisse sonu */
 
     .Filtir {
-        margin-left: -81px!important;
+        transform: translate(-104px, -7px);
     }
 
+    .input-group > .form-control, .input-group > .form-floating, .input-group > .form-select {
+        padding: 2px;
+        font-size: 15px;
+    }
 
     .card-container {
-        transform: translate(87px, 0);
+        justify-content: center !important;
+        margin-bottom: 0;
     }
 
     .moviePageDropdown {
@@ -343,16 +367,16 @@
     }
 
     .pagination {
-        margin-top: 0!important;
-        transform: translate(-26px, 56px);
+        margin-top: 0 !important;
+        transform: translate(0, 56px);
     }
 
         .pagination > li > a {
             font-size: 22px;
-            padding:3px;
+            padding: 3px;
         }
 
-    /* Play Movies hisse sonu */
+    /*  Movies hisse sonu */
 
     video {
         margin-top: 4rem !important;
@@ -420,6 +444,9 @@
         right: 0;
         font-size: 25px;
     }
+
+    /* Play Movies hisse sonu */
+
 }
 
 @media (max-width: 320px) {
@@ -430,7 +457,7 @@
     .Accaunt {
         display: block;
         cursor: pointer;
-        transform: translate(67px, 0px);
+        transform: translate(11px, 0px);
     }
 
         .Accaunt .line {
@@ -485,14 +512,12 @@
     }
 
     .search-box {
-        width: 145px;
-        transform: translate(4px, 0);
+        width: 206px;
+        transform: translate(-18px, 0);
     }
 
     .logoicons img {
-        width: 120px;
-        height: 30px;
-        transform: translate(-86px, 0);
+        display: none;
     }
 
     .nav-bar ul li a {
@@ -508,13 +533,13 @@
     }
 
     .logoIcon {
-        width: 7%;
+        width: 30%;
     }
 
         .logoIcon img {
-            width: 188px;
-            transform: translate(221px, 0);
-            height: 45px;
+            width: 146px;
+            transform: translate(89px, 5px);
+            height: 40px;
         }
 
     .Icon {
@@ -522,7 +547,7 @@
     }
 
         .Icon li {
-            font-size: 27px;
+            font-size: 21px;
             margin-top: 13px;
             margin-right: 1rem;
         }
@@ -541,12 +566,17 @@
     /* Contact hisse sonu */
 
     .Filtir {
-        margin-left: -81px !important;
+        transform: translate(-104px, -7px);
     }
 
+    .input-group > .form-control, .input-group > .form-floating, .input-group > .form-select {
+        padding: 2px;
+        font-size: 15px;
+    }
 
     .card-container {
-        transform: translate(64px, 0);
+        justify-content: center !important;
+        margin-bottom: 0;
     }
 
     .moviePageDropdown {
@@ -563,7 +593,7 @@
             padding: 3px;
         }
 
-    /* Play Movies hisse sonu */
+    /*  Movies hisse sonu */
 
     video {
         margin-top: 4rem !important;
@@ -631,6 +661,7 @@
         right: 0;
         font-size: 25px;
     }
+    /* Play Movies hisse sonu */
 }
 /* Tablet üçün */
 @media (max-width: 768px) and (min-width: 426px) {
@@ -642,7 +673,7 @@
     .Accaunt {
         display: block;
         cursor: pointer;
-        transform: translate(67px, 0px);
+        transform: translate(33px, 0);
     }
 
         .Accaunt .line {
@@ -664,6 +695,9 @@
         overflow: hidden;
     }
 
+    .dropdown {
+        transform: translate(-53px, 0);
+    }
 
 
     .dropdown-menu {
@@ -694,33 +728,38 @@
     }
 
     .search-box {
-        width: 450px;
-        height: 40px;
-        transform: translate(28px, 0);
+        width: 220px;
+        transform: translate(-8px, 0);
     }
 
     .logoicons img {
-        width: 120px;
-        height: 30px;
-        transform: translate(-55px, 0);
+        display:none;
     }
 
     .nav-bar ul li a {
         transform: translate(0, -64px);
     }
 
-    .DisplayType {
-        transform: translate(47px, 0);
+    footer {
+        width: 100%;
     }
 
-    .logoIcon img {
-        width: 145px;
-        transform: translate(81px, 0);
-        height: 45px;
+    .DisplayType {
+        display: none;
     }
+
+    .logoIcon {
+        width: 30%;
+    }
+
+        .logoIcon img {
+            width: 161px;
+            transform: translate(102px, 8px);
+            height: 40px;
+        }
 
     .Icon {
-        transform: translate(71px, 0);
+        width: 70%;
     }
 
         .Icon li {
@@ -729,10 +768,20 @@
             margin-right: 1rem;
         }
 
+
     /* Header ve Footer hisse sonu */
+
+    .moviePageDropdown {
+         transform: translate(0, 0);
+    }
 
     .form-contact .header h1 {
         font-size: 40px;
+    }
+    .form-contact {
+        width: 91%;
+        margin: 73px 20px;
+        height: auto;
     }
 
     /* Contact hisse sonu */
@@ -741,8 +790,23 @@
         margin-left: 13px;
     }
 
-    /* Play Movies hisse sonu */
+    .card-container {
+        justify-content: center !important;
+        margin-bottom: 0!important;
+    }
 
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 0;
+        transform: translate(0, 51px);
+    }
+
+    .pagination > li > a{
+        font-size:21px;
+    }
+
+
+    /* Play Movies hisse sonu */
     video {
         margin-top: 2rem !important;
         width: 132% !important;
@@ -808,6 +872,7 @@
 /* Orta ölçülü ekranlar üçün (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
 
+
     .logoicons img {
         width: 120px;
         height: 30px;
@@ -820,12 +885,12 @@
     }
 
     header {
-        padding: 0 72px;
+        padding: 0 10px;
     }
 
     .nav-bar ul li a {
-        font-size: 16px;
-        padding: 10px 18px;
+        font-size: 14px;
+        padding: 9px 5px;
         margin-top: 10px;
     }
 
@@ -833,12 +898,24 @@
         transform: translate(29px,0);
     }
 
+    footer {
+        transform: translate(0, 64px);
+    }
+
     .logoIcon {
         margin-right: 33px;
     }
 
-    /* Header ve Footer hisse sonu */
+        .logoIcon img {
+            margin-right: 0;
+        }
 
+    .Icon  {
+        width:100%;
+    }
+
+ 
+    /* Header ve Footer hisse sonu */
     .form-contact .header h1 {
         font-size: 40px;
     }

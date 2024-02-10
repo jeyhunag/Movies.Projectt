@@ -24,14 +24,14 @@
         border-color: red;
     }
 
-.container .form-contact .button-contact {
+ .button-contact {
     padding: 8px 40px;
     background-color: red;
     border-radius: 0;
     color: white;
 }
 
-    .container .form-contact .button-contact:hover {
+    .button-contact:hover {
         background-color: red;
         color: white;
     }
