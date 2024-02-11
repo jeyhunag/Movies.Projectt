@@ -30,16 +30,15 @@
             <h4 class="my-5">Director:@Model.MovieC.Director</h4>
         </div>
         <div class="BMovies">
-            <button type="button" class="btn px-5 "><i class="bi bi-play-fill me-2 "></i>Play</button>
-            <button type="button" class="btn px-5"><i class="bi bi-plus me-2"></i>MY List</button>
+            <button type="button" class="btn px-5" data-bs-toggle="modal" data-bs-target="#myModal">
+                <i class="bi bi-share-fill me-2"></i>
+                Share
+            </button>         
             <button type="button" class="btn px-5" data-bs-toggle="modal" data-bs-target="#trailer">
                 <i class="bi bi-camera-video-fill me-2"></i>
                 Trailer
             </button>
-            <button type="button" class="btn px-4" data-bs-toggle="modal" data-bs-target="#myModal">
-                <i class="bi bi-share-fill me-2"></i>
-                Share
-            </button>
+
 
             <!-- The Modal Share-->
             <div class="modal modalPlayMovies" id="myModal">
@@ -87,7 +86,7 @@
 
 
 <!--RELATED MOVIES-->
-<div class="container">
+@* <div class="container">
     <div class="RelatedMovies">
         <h2 class="text-white fw-bolder">RELATED MOVIES</h2>
         <hr id="hr_color">
@@ -97,7 +96,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> *@
 
 
 @section Scripts {
