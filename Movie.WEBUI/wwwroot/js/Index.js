@@ -1,4 +1,4 @@
-Accaunt = document.querySelector(".Accaunt");
+﻿Accaunt = document.querySelector(".Accaunt");
 Accaunt.onclick = function () {
     navBar = document.querySelector(".nav-bar");
     navBar.classList.toggle("active")
@@ -22,13 +22,7 @@ window.onclick = function (event) {
     }
 }
 
-// Navbar Pages dropdown
 
-document.querySelector('#pages').addEventListener('click', function (event) {
-    event.preventDefault();
-    let dropdown = this.parentElement.querySelector('.dropdown-menu');
-    dropdown.classList.toggle('show');
-});
 
 // Navbar Pages dropdown active onclick color
 
