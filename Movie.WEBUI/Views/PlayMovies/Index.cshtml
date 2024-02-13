@@ -86,7 +86,7 @@
 
 
 <!--RELATED MOVIES-->
-@* <div class="container">
+<div class="container">
     <div class="RelatedMovies">
         <h2 class="text-white fw-bolder">RELATED MOVIES</h2>
         <hr id="hr_color">
@@ -96,30 +96,6 @@
             </div>
         </div>
     </div>
-</div> *@
+</div>
 
 
-@section Scripts {
-
-    <script>
-
-
-        $(document).ready(function () {
-            $('.img-div div').hover(function () {
-
-                $(this).children().css({ 'transform': 'scale(1.2)', 'transition': 'transform 0.5s', 'z-index': '1' });
-
-            }, function () {
-                $(this).children().css({ 'transform': 'scale(1)', 'z-index': '0' });
-            });
-
-            $('.img-div > div').mouseover(function () {
-                $(this).addClass("active");
-            });
-
-            $('.img-div > div').mouseleave(function () {
-                $(this).removeClass("active");
-            });
-        });
-    </script>
-}

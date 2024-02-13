@@ -264,6 +264,69 @@
         transform: translate(0px, -17px);
     }
 
+    .modal-content {
+        transform: translate(-20px, 125px);
+        width: 334px;
+        height: 542px;
+    }
+
+    .labelModal {
+        margin: 0rem 0 0 -10rem;
+    }
+
+    .form-group {
+        font-size: 13px;
+        margin: 7px 0;
+    }
+
+    .modal-content p {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+
+        .social-icons a:hover {
+            background-color: #202020;
+        }
+
+
+    .modal-overlay-sigup {
+        transform: translate(-29px, 49px);
+    }
+
+    .modal-content-sigup {
+        margin: 0 0;
+        padding: 8px;
+        width: 349px;
+        height: 573px;
+    }
+
+    .modal-title-sigup {
+        margin: 0 0;
+    }
+
+    .labelModal-signup {
+        margin-left: -12rem;
+        font-size: 13px;
+    }
+
+    .changePassword-signup {
+        color: white;
+        margin: 5px 5px 5px -9rem;
+        font-size: 11px;
+    }
+
+    .remember-me {
+        font-size: 16px;
+    }
+
+    .formModal {
+        font-size: 9px;
+    }
+
     /* Play Movies hisse sonu */
 }
 
@@ -536,6 +599,69 @@
         font-size: 12px !important;
         transform: translate(0px, -17px);
     }
+
+    .modal-content {
+        transform: translate(-34px, 92px);
+        width: 334px;
+        height: 542px;
+    }
+
+    .labelModal {
+        margin: 0rem 0 0 -10rem;
+    }
+
+    .form-group {
+        font-size: 13px;
+        margin: 7px 0;
+    }
+
+    .modal-content p {
+        margin-left: 29px;
+        margin-top: 1rem;
+        font-size: 14px;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+
+        .social-icons a:hover {
+            background-color: #202020;
+        }
+
+    .modal-overlay-sigup {
+        transform: translate(-34px, 49px);
+    }
+
+    .modal-content-sigup {
+        margin: 0 0;
+        padding: 8px;
+        width: 337px;
+        height: 573px;
+    }
+
+    .modal-title-sigup {
+        margin: 0 0;
+    }
+
+    .labelModal-signup {
+        margin-left: -12rem;
+        font-size: 13px;
+    }
+
+    .changePassword-signup {
+        color: white;
+        margin: 5px 5px 5px -9rem;
+        font-size: 11px;
+    }
+
+    .remember-me {
+        font-size: 16px;
+    }
+
+    .formModal {
+        font-size: 9px;
+    }
     /* Play Movies hisse sonu */
 
 }
@@ -796,6 +922,69 @@
         font-size: 12px !important;
         transform: translate(0px, -17px);
     }
+
+    .modal-content {
+        transform: translate(-34px, 92px);
+        width: 334px;
+        height: 542px;
+    }
+
+    .labelModal {
+        margin: 0rem 0 0 -10rem;
+    }
+
+    .form-group {
+        font-size: 13px;
+        margin: 7px 0;
+    }
+
+    .modal-content p {
+        margin-left: 29px;
+        margin-top: 1rem;
+        font-size: 14px;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+
+        .social-icons a:hover {
+            background-color: #202020;
+        }
+
+    .modal-overlay-sigup {
+        transform: translate(-34px, 49px);
+    }
+
+    .modal-content-sigup {
+        margin: 0 0;
+        padding: 8px;
+        width: 337px;
+        height: 573px;
+    }
+
+    .modal-title-sigup {
+        margin: 0 0;
+    }
+
+    .labelModal-signup {
+        margin-left: -12rem;
+        font-size: 13px;
+    }
+
+    .changePassword-signup {
+        color: white;
+        margin: 5px 5px 5px -9rem;
+        font-size: 11px;
+    }
+
+    .remember-me {
+        font-size: 16px;
+    }
+
+    .formModal {
+        font-size: 9px;
+    }
     /* Play Movies hisse sonu */
 }
 /* Tablet üçün */
@@ -1052,6 +1241,48 @@
         font-size: 12px !important;
         transform: translate(0px, -17px);
     }
+
+    .modal-content {
+        transform: translate(-7px, 125px);
+        width: 348px;
+        height: 542px;
+    }
+    .labelModal {
+        margin: 0rem 0 0 -10rem;
+    }
+
+    .form-group {
+        font-size: 13px;
+        margin: 7px 0;
+    }
+
+    .modal-content p {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+
+        .social-icons a:hover {
+            background-color: #202020;
+        }
+
+    .modal-overlay-sigup {
+        transform: translate(-29px, 49px);
+    }
+
+    .modal-content-sigup {
+        margin: 0 0;
+        padding: 8px;
+        width: 383px;
+        height: 662px;
+    }
+
+    .remember-me {
+        font-size: 16px;
+    }
 }
 
 /* Orta ölçülü ekranlar üçün (769px - 1024px) */
@@ -1212,6 +1443,55 @@
         font-size: 12px !important;
         transform: translate(0px, -17px);
     }
+
+    /* modal Share */
+    .modalPlayMovies {
+        top: 150px;
+    }
+
+    .modal-title-playmovies {
+        color: #202020;
+    }
+
+    .btn-play-close {
+        color: white !important;
+        font-weight: bolder !important;
+    }
+
+        .btn-play-close:hover {
+            color: white !important;
+        }
+
+    .modal-body-icon a i {
+        font-size: 40px !important;
+        color: white;
+    }
+
+
+    /* Modal Trailer */
+    .modal-dialog{
+    }
+    .modal-content-playMovies {
+        border-radius: 5px;
+        top: 100px !important;
+        width: 600px;
+        background: #202020;
+    }
+
+    .modal-body-playmovies {
+        margin-top: -40px;
+    }
+
+        .modal-body-playmovies > video {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+
+    .modal-overlay-sigup {
+        transform: translate(59px, 104px) !important;
+    }
+
 
     /* Play Movies hisse sonu */
 }
