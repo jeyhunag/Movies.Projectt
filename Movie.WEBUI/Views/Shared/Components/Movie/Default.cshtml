@@ -29,7 +29,7 @@ else
                 <div class="slider-content">
                     <span class="badge mb-4">New</span>
                     <h1>@item.Name</h1>
-                    <p style="width:900px; text-align:justify;">
+                    <p>
                         @item.Description
                     </p>
                     <div class="SpanMovies my-5">
@@ -42,7 +42,6 @@ else
                     <div class="slider-action">
                         <a asp-area="" asp-controller="PlayMovies" asp-action="Index" asp-route-id="@item.Id" style="border-radius:0;"
                         class="slider-btn-1">Play Now</a>
-                        <a href="# " class="slider-btn-2" style="border-radius:0; color:white;">My List</a>
                     </div>
                 </div>
             </div>

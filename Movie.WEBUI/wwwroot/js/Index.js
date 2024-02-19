@@ -64,22 +64,23 @@ $(document).ready(function () {
 });
 
 
-//  P0PULAR MOVIES
+//  MOVIES Card
 
 $(".carousel").owlCarousel({
     margin: 20,
     loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1,
+            items: 2,
             nav: false
         },
-        600: {
+        426: {
             items: 2,
+            nav: false
+        },
+        768: {
+            items: 3,
             nav: false
         },
         1000: {
@@ -89,89 +90,6 @@ $(".carousel").owlCarousel({
     }
 });
 
-//  TOP 10 BOX OFFICE Carusel
-
-$(".boxoffice").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: false
-        },
-        600: {
-            items: 2,
-            nav: false
-        },
-        1000: {
-            items: 5,
-            nav: false
-        },
-    }
-});
-
-//  TRENDING NOW Carusel
-
-$(".trendingNow").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: false
-        },
-        600: {
-            items: 2,
-            nav: false
-        },
-        1000: {
-            items: 5,
-            nav: false
-        },
-    }
-});
-
-//  SUGGESTED FOR YOU Carusel
-
-$(".suggestedFor").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: false
-        },
-        600: {
-            items: 2,
-            nav: false
-        },
-        1000: {
-            items: 5,
-            nav: false
-        },
-    }
-});
-//  TOP 10 BOX OFFICE
-
-let swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-    },
-});
 
 // JS code to open and close the modal Sign In
 

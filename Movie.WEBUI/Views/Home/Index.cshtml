@@ -3,10 +3,7 @@
     ViewData["Title"] = "Home Page";
     int count = 0;
 }
-@section addcss{
-    <link rel="stylesheet" href="~/css/owl-carusel.css" rel="stylesheet" asp-append-version="true" />
 
-}
 <div class="hero-slider owl-carousel owl-theme ">
     <!--Esas Carusel-->
     <!--item-->
@@ -27,27 +24,23 @@
 
                 </ul>
                 <div class="images container">
-
                     @foreach (var item in Model.GenresCategories.Where(gc => gc.Name.Contains("Action") || gc.Name.Contains("Sport")))
                     {
-
                         count++;
                         if (count == 1)
                         {
-                            <div class="imageJ @item.Name active text-white">
+                            <div class="carousel owl-carousel imageJ @item.Name active text-white">
 
-                                @await Component.InvokeAsync("Movie", new{categoryId = item.Id})
-
+                                @await Component.InvokeAsync("Movie", new { categoryId = item.Id })
 
                             </div>
                         }
                         else
                         {
-                            <div class="imageJ @item.Name text-white">
-                                @await Component.InvokeAsync("Movie", new{categoryId = item.Id})
+                            <div class="carousel owl-carousel imageJ @item.Name  text-white">
+                                @await Component.InvokeAsync("Movie", new { categoryId = item.Id })
                             </div>
                         }
-
                     }
                 </div>
             </div>
@@ -71,7 +64,7 @@
         <div>
             <h2 class="text-white fw-bolder">Top 5</h2>
             <hr id="hr_color">
-            <div class=" suggestedFor owl-carousel">
+            <div class="carousel owl-carousel">
                 @foreach (var item in Model.GenresCategories)
                 {
 
@@ -87,7 +80,7 @@
         <hr id="hr_color">
         @foreach (var item in Model.GenresCategories.Where(gc => gc.Name.Contains("History")))
         {
-            <div class=" trendingNow owl-carousel @item.Name">
+            <div class="carousel owl-carousel @item.Name">
                 @await Component.InvokeAsync("Movie", new{categoryId = item.Id})
             </div>
         }
@@ -117,16 +110,18 @@
                         count++;
                         if (count == 1)
                         {
+                            <div class="carousel owl-carousel  image @item.Name active text-white">
 
-                            <div class="image @item.Name  active text-white ">
-                                @await Component.InvokeAsync("Movie", new{categoryId = item.Id})
+                                @await Component.InvokeAsync("Movie", new { categoryId = item.Id })
+
                             </div>
-
                         }
                         else
                         {
-                            <div class="image @item.Name  text-white ">
-                                @await Component.InvokeAsync("Movie", new{categoryId = item.Id})
+                            <div class="carousel owl-carousel  image @item.Name  text-white">
+
+                                @await Component.InvokeAsync("Movie", new { categoryId = item.Id })
+
                             </div>
                         }
                     }
@@ -142,7 +137,7 @@
         <hr id="hr_color">
         @foreach (var item in Model.GenresCategories.Where(gc => gc.Name.Contains("Animation")))
         {
-            <div class=" suggestedFor owl-carousel @item.Name">
+            <div class="carousel owl-carousel @item.Name">
                 @await Component.InvokeAsync("Movie",new{categoryId = item.Id})
             </div>
         }
