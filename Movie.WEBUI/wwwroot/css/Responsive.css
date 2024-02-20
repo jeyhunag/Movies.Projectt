@@ -178,7 +178,8 @@
     }
 
     .PMovies div h1 {
-        font-size: 37px !important;
+        transform: translate(-29px,10px) !important;
+        font-size: 29px;
     }
 
     .SpanMovies {
@@ -565,7 +566,8 @@
     }
 
     .PMovies div h1 {
-        font-size: 37px !important;
+        transform: translate(-18px,10px) !important;
+        font-size: 29px;
     }
 
     .SpanMovies {
@@ -942,7 +944,8 @@
     }
 
     .PMovies div h1 {
-        font-size: 37px !important;
+        transform: translate(-18px,10px) !important;
+        font-size: 29px;
     }
 
     .SpanMovies {
@@ -1261,7 +1264,8 @@
     }
 
     .PMovies div h1 {
-        font-size: 37px !important;
+        transform: translate(-42px,10px) !important;
+        font-size: 29px;
     }
 
     .SpanMovies {
@@ -1522,6 +1526,11 @@
         height: 690px !important;
     }
 
+    .PMovies div h1 {
+        transform: translate(-9px,10px)!important;
+        font-size: 29px;
+    }
+
     .text {
         width: 300px;
         margin: 0 0 0 0;
@@ -1566,12 +1575,6 @@
             margin: 16px 0 !important;
         }
 
-    .RelatedMovies {
-        margin-top: 7rem;
-        width: 106%;
-        transform: translate(-45px, 0);
-    }
-
     .images,
     .images .featured,
     .images .movies,
@@ -1581,6 +1584,14 @@
         justify-content: space-between !important;
         align-items: center !important;
     }
+
+    .slider-item {
+        background-size: cover!important;
+        background-size: 100% 100vh !important;
+        background-repeat: no-repeat !important;
+    }
+
+
 
     .slider-content .badge {
         font-size: 26px;

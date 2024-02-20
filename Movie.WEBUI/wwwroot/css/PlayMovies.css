@@ -13,6 +13,7 @@ video {
 
 .PMovies div h1 {
     color: #f8bc24;
+    transform:translate(-166px,10px);
 }
 
 .MoviesFoto {
