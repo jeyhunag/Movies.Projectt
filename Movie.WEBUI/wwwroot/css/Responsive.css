@@ -1208,7 +1208,8 @@
     }
 
     .form-contact .header h1 {
-        font-size: 40px;
+        font-size: 40px !important;
+        transform: translate(10px, 12px) !important;
     }
 
     .form-contact {
@@ -1496,7 +1497,8 @@
 
 
     .form-contact .header h1 {
-        font-size: 40px;
+        font-size: 40px!important;
+        transform: translate(10px, -26px)!important;
     }
 
 
@@ -1700,7 +1702,7 @@
 
 /* Böyük Ekranlar üçün */
 @media (min-width: 1442px) and (max-width: 2560px) {
-    .logoicons img {
+/*    .logoicons img {
         width: 135px;
         height: 46px;
     }
@@ -1742,12 +1744,12 @@
         .logoIcon img {
             width: 259px;
             height: 60px;
-        }
+        }*/
 
     /* Header ve Footer hisse sonu */
 
 
-    .form-contact {
+/*    .form-contact {
         width: 51%;
     }
 
@@ -1761,7 +1763,7 @@
 
     .form-contact > div > label {
         font-size: 30px;
-    }
+    }*/
 
     /* Contact hisse sonu */
 
@@ -1769,7 +1771,7 @@
 
     /*  Movies hisse sonu */
 
-    video {
+/*    video {
         margin-top: 6rem !important;
         height: auto !important;
     }
@@ -1793,7 +1795,7 @@
         width: 220px;
         height: 280px;
         margin: 0 16px 0 0;
-    }
+    }*/
 
     /* Play Movies hisse sonu */
 
