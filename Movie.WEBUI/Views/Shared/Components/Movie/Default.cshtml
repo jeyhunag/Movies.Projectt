@@ -5,7 +5,10 @@
     @foreach (var item in Model)
     {
         <div class="img-div">
-            <div>
+            <div class="card-language">
+                <div class="turkish-text-container">
+                    <span class="turkish-text">Türkçe</span>
+                </div>
                 <img src="~/@item.Img" alt="" id="image" class="img-fluid" loading="lazy">
                 <div class="icon-container me-2">
                     <a asp-area="" asp-controller="PlayMovies" asp-action="Index" asp-route-id="@item.Id"><i class="bi bi-play-circle "></i></a>
@@ -56,12 +59,12 @@ else
     <script>
 
         $(document).ready(function () {
-            $('.img-div div').hover(function () {
-
-                $(this).children().css({ 'transform': 'scale(1.2)', 'transition': 'transform 0.5s', 'z-index': '1' });
-
+            $('.img-div > div').hover(function () {
+                // Yalnız img elementini seçib, onu böyüdürük
+                $(this).find('img').css({ 'transform': 'scale(1.2)', 'transition': 'transform 0.5s', 'z-index': '1' });
             }, function () {
-                $(this).children().css({ 'transform': 'scale(1)', 'z-index': '0' });
+                // Yalnız img elementini seçib, onun ölçüsünü normallaşdırırıq
+                $(this).find('img').css({ 'transform': 'scale(1)', 'z-index': '0' });
             });
 
             $('.img-div > div').mouseover(function () {
@@ -72,5 +75,7 @@ else
                 $(this).removeClass("active");
             });
         });
+
+
     </script>
 }
