@@ -62,6 +62,10 @@
                     <div class="tags">
                         <span>@item.Year</span>
                         <span>@item.GenresCategory.Name</span>
+                        @if (item.LanguageCategoryId==7)
+                        {
+                             <span style="font-size:14px; margin-left:4px;">@item.LanguageCategory.Name</span>
+                        }
                     </div>
                     <div class="info">
                         Director: @item.Director

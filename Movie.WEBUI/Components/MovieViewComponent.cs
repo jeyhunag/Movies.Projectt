@@ -16,7 +16,10 @@ namespace Movie.WEBUI.Components
 
         public Task<IViewComponentResult> InvokeAsync(int trendId, int categoryId, bool top =false,bool isneww=false)
         {
-            var movies = db.Movies.Include(p=>p.GenresCategory).Include(p => p.CountryCategory).Include(p=>p.Trend).Include(p => p.LanguageCategory).ToList();
+            var movies = db.Movies.Include(p=>p.GenresCategory)
+                .Include(p => p.CountryCategory)
+                .Include(p=>p.Trend)
+                .Include(p => p.LanguageCategory).AsNoTracking().ToList();
 
             if(trendId > 0)
             {
