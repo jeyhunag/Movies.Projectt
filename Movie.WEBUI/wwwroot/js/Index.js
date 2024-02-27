@@ -199,22 +199,3 @@ function addListClickHandlers(listSelector) {
 
 addListClickHandlers('.featured-movies-shows');
 addListClickHandlers('.BestSeries_li');
-
-//Image focus top bar. sekil uzerinde focus olduqda sag yuxaridan menyu acilir.
-$(document).ready(function () {
-    $('.img-div div').hover(function () {
-
-        $(this).children().css({ 'transform': 'scale(1.2)', 'transition': 'transform 0.5s', 'z-index': '1' });
-
-    }, function () {
-        $(this).children().css({ 'transform': 'scale(1)', 'z-index': '0' });
-    });
-
-    $('.img-div > div').mouseover(function () {
-        $(this).addClass("active");
-    });
-
-    $('.img-div > div').mouseleave(function () {
-        $(this).removeClass("active");
-    });
-});

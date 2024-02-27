@@ -4,10 +4,13 @@
 {
     @foreach (var item in Model)
     {
-        <div class="img-div">
+        <div class="img-div @(item.LanguageCategoryId == 7 ? "turkish" : "")">
             <div class="card-language">
                 <div class="turkish-text-container">
-                    <span class="turkish-text">Türkçe</span>
+                    @if (item.LanguageCategoryId==7)
+                    {
+                        <span class="turkish-text">Türkçe</span>
+                    }
                 </div>
                 <img src="~/@item.Img" alt="" id="image" class="img-fluid" loading="lazy">
                 <div class="icon-container me-2">
@@ -57,25 +60,16 @@ else
 @section Scripts {
 
     <script>
-
         $(document).ready(function () {
-            $('.img-div > div').hover(function () {
-                // Yalnız img elementini seçib, onu böyüdürük
+            // Fərəni yalnız 'turkish' classına malik kartların üzərinə gətirəndə hadisələr təyin edirik.
+            $('.img-div.turkish > div').hover(function () {
+                // Burada yalnız 'turkish' classı olan kartlar üçün transformasiya tətbiq edirik
                 $(this).find('img').css({ 'transform': 'scale(1.2)', 'transition': 'transform 0.5s', 'z-index': '1' });
             }, function () {
-                // Yalnız img elementini seçib, onun ölçüsünü normallaşdırırıq
+                // Burada transformasiya ləğv edilir
                 $(this).find('img').css({ 'transform': 'scale(1)', 'z-index': '0' });
             });
-
-            $('.img-div > div').mouseover(function () {
-                $(this).addClass("active");
-            });
-
-            $('.img-div > div').mouseleave(function () {
-                $(this).removeClass("active");
-            });
         });
-
 
     </script>
 }
