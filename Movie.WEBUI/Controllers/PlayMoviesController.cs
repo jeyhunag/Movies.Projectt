@@ -16,11 +16,28 @@ namespace Movie.WEBUI.Controllers
             _context = context;
         }
 
-        public IActionResult Index(int id)
+
+        public async Task<IActionResult> Index(int id)
         {
-            var vm = new HomeViewModel();
-            vm.MovieC = _context.Movies.FirstOrDefault(x => x.Id == id);
+            // AsNoTracking() metodunu istifadə edərək, yalnız bu sorğu üçün NoTracking seçimini aktivləşdirin.
+            var movie = await _context.Movies.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+            if (movie != null)
+            {
+                // Tracking'i aktivləşdirmək üçün, obyekti yenidən yükləyin.
+                _context.Entry(movie).State = EntityState.Modified;
+                movie.ViewsCount += 1;
+                await _context.SaveChangesAsync();
+            }
+
+            var vm = new HomeViewModel
+            {
+                MovieC = movie
+            };
+
             return View(vm);
         }
+
+
+
     }
 }

@@ -105,6 +105,7 @@ namespace Movies.DAL.Dtos
         /// Gets or sets whether the movie is new.
         /// </summary>
         public bool isneww { get; set; }
+        public int ViewsCount { get; set; }
 
         /// <summary>
         /// Gets or sets the optional list of movie document DTOs associated with the movie.

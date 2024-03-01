@@ -47,6 +47,7 @@ namespace Movies.DAL.Repostory
                                  GName = gc.Name,
                                  CName = c.Name,
                                  LName = l.Name
+                                
 
                              }).FirstOrDefaultAsync();
 

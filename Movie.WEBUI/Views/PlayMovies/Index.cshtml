@@ -19,11 +19,12 @@
     <div class="text mt-5">
         <h1>@Model.MovieC.Name</h1>
         <div class="SpanMovies my-5">
-            <span><i class="bi bi-person-fill"></i>@Model.MovieC.Age</span>
+            <span><i class="bi bi-person-fill"></i>+ @Model.MovieC.Age</span>
             <span><i class="bi bi-clock"></i>@Model.MovieC.MovieTime</span>
             <span><i class="bi bi-emoji-smile"></i>@Model.MovieC.Year</span>
             <span><i class="bi bi-activity"></i>@Model.MovieC.GenresCategoryId</span>
             <span><i class="bi bi-globe"></i>@Model.MovieC.CountryCategoryId</span>
+            <span><i class="bi bi-globe"></i>@Model.MovieC.ViewsCount</span>
         </div>
         <div class="MoviesP">
             <p>@Model.MovieC.Description</p>
