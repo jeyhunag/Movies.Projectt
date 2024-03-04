@@ -45,6 +45,25 @@ namespace Movie.WEBUI.Controllers
 
         }
 
+        [HttpPost]
+        public async Task<IActionResult> RateMovie(int movieId, double rating)
+        {
+            var movie =await _context.Movies.AsNoTracking().FirstOrDefaultAsync(m => m.Id == movieId);
+            if (movie != null)
+            {
+                _context.Entry(movie).State = EntityState.Modified;
+                movie.RatingSum += rating;
+                movie.RatingCount++;
+               await _context.SaveChangesAsync();
+
+                var newAverageRating = movie.RatingCount > 0 ? movie.RatingSum / movie.RatingCount : 0;
+                return Json(new { newAverageRating = newAverageRating.ToString("0.0") });
+            }
+
+            return NotFound();
+        }
+
+
 
     }
 }

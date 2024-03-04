@@ -54,5 +54,8 @@ namespace Movies.DAL.DbModel
         public bool isneww { get; set; }
 
         public int ViewsCount { get; set; }
+
+        public double RatingSum { get; set; } = 0;
+        public int RatingCount { get; set; } = 0;
     }
 }
