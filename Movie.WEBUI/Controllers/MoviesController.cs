@@ -48,22 +48,42 @@ namespace Movie.WEBUI.Controllers
         [HttpPost]
         public async Task<IActionResult> RateMovie(int movieId, double rating)
         {
-            var movie =await _context.Movies.AsNoTracking().FirstOrDefaultAsync(m => m.Id == movieId);
+            // Trackingi müvəqqəti olaraq aktiv et
+            _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.TrackAll;
+
+            string userIp = HttpContext.Connection.RemoteIpAddress?.ToString();
+            var existingRating = await _context.MovieRatings
+                .FirstOrDefaultAsync(mr => mr.MovieId == movieId && mr.UserIp == userIp);
+
+            if (existingRating != null)
+            {
+                // İstifadəçi daha əvvəl reytinq veribsə, mövcud reytinqi yeniləyin.
+                _context.MovieRatings.Update(existingRating);
+                existingRating.Rating = rating;
+            }
+            else
+            {
+                // Yeni reytinq yaradın.
+                var movieRating = new MovieRating { MovieId = movieId, UserIp = userIp, Rating = rating };
+                _context.MovieRatings.Add(movieRating);
+            }
+
+            await _context.SaveChangesAsync();
+
+            // Orta reytinqi yenidən hesablayın.
+            var movie = await _context.Movies.FirstOrDefaultAsync(m => m.Id == movieId);
             if (movie != null)
             {
-                _context.Entry(movie).State = EntityState.Modified;
-                movie.RatingSum += rating;
-                movie.RatingCount++;
-               await _context.SaveChangesAsync();
-
+                var ratings = await _context.MovieRatings.Where(mr => mr.MovieId == movieId).ToListAsync();
+                movie.RatingSum = ratings.Sum(r => r.Rating);
+                movie.RatingCount = ratings.Count;
+                _context.Movies.Update(movie);
+                await _context.SaveChangesAsync();
                 var newAverageRating = movie.RatingCount > 0 ? movie.RatingSum / movie.RatingCount : 0;
                 return Json(new { newAverageRating = newAverageRating.ToString("0.0") });
             }
 
             return NotFound();
         }
-
-
-
     }
 }

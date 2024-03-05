@@ -24,5 +24,7 @@ namespace Movies.DAL.Data
         public  DbSet<Contact> Contacts { get; set; }
         public  DbSet<MoviesDocument> MoviesDocuments { get; set; }
         public  DbSet<Trends> Trends { get; set; }
+        public DbSet<MovieRating> MovieRatings { get; set; }
+
     }
 }

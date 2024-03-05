@@ -59,8 +59,7 @@
                 <div class="details" sty>
                     <a asp-area="" asp-controller="PlayMovies" asp-action="Index" asp-route-id="@item.Id"><i class="bi bi-play-circle"></i></a>
                     <h2>@item.Name</h2>
-@*                     <div id="rateYo_@item.Id" style="width: 110px; margin-bottom:15px;" data-rateyo-full-star="true"> </div>
- *@                    <div id="rateYo_@item.Id"  data-rating="@((item.RatingCount > 0) ? (item.RatingSum / item.RatingCount) : 0)" style="width: 110px; margin-bottom:15px;" data-rateyo-full-star="true"></div>
+                  <div id="rateYo_@item.Id"  data-rating="@((item.RatingCount > 0) ? (item.RatingSum / item.RatingCount) : 0)" style="width: 110px; margin-bottom:15px;" data-rateyo-full-star="true"></div>
 
                     <div id="averageRating_@item.Id" style="color:white;">
                         @((item.RatingCount > 0) ? (item.RatingSum / item.RatingCount).ToString("0.0") : "0")
@@ -86,23 +85,6 @@
 @section Scripts{
 
     <script>
-
-
-        /* Javascript Star*/
-        // $(function () {
-        //     // Iterate over all divs with id attribute that starts with "rateYo_"
-        //     $('div[id^="rateYo_"]').each(function () {
-        //         // Extract the Id of the MovieC item from the div's id attribute
-        //         var movieId = this.id.replace('rateYo_', '');
-        //         // Initialize rateYo plugin for this div with the extracted movieId
-        //         $(this).rateYo({
-        //             rating: 1,
-        //             spacing: "5px",
-        //             starWidth: "20px",
-        //             fullStar: true
-        //         });
-        //     });
-        // });
 
         $(function () {
             $('div[id^="rateYo_"]').each(function () {
